@@ -1,9 +1,12 @@
 ---
 tags: variables, integers, strings, operators, primitives, floats
 language: JavaScript, JS
+resources: 5
 ---
 
 #JavaScript Basics:
+JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.  
+
 ## Variables, Primitives, and Operators
 Welcome to JavaScript! First thing first, let's get the absolute basics down before you do anything else. In this lab we'll explore variables, primitives (strings, integers, floats, and booleans), and operators.
 
@@ -47,12 +50,14 @@ Welcome to JavaScript! First thing first, let's get the absolute basics down bef
 ### Numbers
   Unlike most programming languages JS uses floats by default. And creating literal numbers uses the Number Constructor. New numbers can optionally have decimal points with trailing zeros, but keep in mind they are floats either way.
 
-  Sometimes this can lead to unexpected consequences, which can generally be solved with `Math.floor`.
+  Sometimes this can lead to unexpected consequences, which can generally be solved with `Math.floor`.  Note when comparing integers to unknown numbers it is best practice to floor the unknown because some floats are equal to the integer.
 
   ex.
   ```javascript
   4 === 4.0; // returns true
   Math.floor(4.00001); // returns 4
+  4.0000000000000001 === 4; // returns true
+  Math.floor(4.0000000000000001); === true // _safer!_
   ```
 
 ### Booleans
@@ -90,6 +95,7 @@ Welcome to JavaScript! First thing first, let's get the absolute basics down bef
   ```
 
 ####Resources:
+* [A Larger (optional) tutorial by Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 * [String Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * [Number Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 * [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
