@@ -5,14 +5,14 @@ resources: 5
 ---
 
 #JavaScript Basics:
-JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.  
+JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.
 
 ## Variables, Primitives, and Operators
 Welcome to JavaScript! First thing first, let's get the absolute basics down before you do anything else. In this lab we'll explore variables, primitives (strings, integers, floats, and booleans), and operators.
 
 ### Variables
   In JavaScript you can declare a variable in two ways but each have different consequences.
-  
+
   The best way is to use the key word `var` before the variable.  This ensures that the variable is set to the current scope.  If var is not used in defining a new variable it becomes global and is accessible throughout the program.  This happens because it becomes attached to the global object, which in most cases is `window`.
 
   ex.
@@ -57,7 +57,7 @@ Welcome to JavaScript! First thing first, let's get the absolute basics down bef
   4 === 4.0; // returns true
   Math.floor(4.00001); // returns 4
   4.0000000000000001 === 4; // returns true
-  Math.floor(4.0000000000000001); === true // _safer!_
+  Math.floor(4.0000000000000001); === true // safer!
   ```
 
 ### Booleans
