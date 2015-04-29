@@ -83,7 +83,7 @@ Welcome to JavaScript! First thing first, let's get the absolute basics down bef
   ```
 
 ### Undefined, Null, and NaN
-  Undefined represents the absence of a primitve value, and Null represents the absence of an object.
+  Undefined represents the absence of a primitive value, and Null represents the absence of an object.
 
   NaN represents an error from the improper use of a math operator.  NaN is the only thing in JS that is not equal to itself. To check for NaN us the `isNaN()` function.
 
