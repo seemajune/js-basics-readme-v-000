@@ -32,6 +32,7 @@ var foo =         'hello world';
 
 ```javascript
 2 * 3 + 5;    // returns 11; multiplication happens first
+
 2 * (3 + 5);  // returns 16; addition happens first
 ```
 
@@ -60,34 +61,36 @@ JavaScript has a small set of primitive data types:
     - this is a special keyword that means one of two things: no value or empty.  The difference from undefined is that when a variable is null, it is still defined
 
 ## Truthy and Falsely Things
-  We make a lot of assumptions when we write computer programs. In order to make the right assumtions, we need to understand what values in our program evaluate to `truthy` values and which evaluate to `falsely` values.
-  ** Values that evaluate to `true`
+We make a lot of assumptions when we write computer programs. In order to make the right assumtions, we need to understand what values in our program evaluate to `truthy` values and which evaluate to `falsely` values.
+
+  ** Values that evaluate to `true`**
+
   ```javascript
-  'all strings'
+  'all strings';
 
-  'all number strings' // for example '0', '5', '0.2', '-3.14'
+'all number strings'; // for example '0', '5', '0.2', '-3.14'
 
-  [] // an empty array
+[]; // an empty array
 
-  {} // an empty object
+{} // an empty object
 
-  1 // any non-zero number
+1 // any non-zero number
   ```
 
-  **Values that evaluate to 'fasle'
+  **Values that evaluate to 'false'**
   ```javascript
-    0 // the number zero
+  0 // the number zero
 
-  ''  // an empty string
+''  // an empty string
 
-  NaN
+NaN
 
-  null
+null
 
-  undefined
+undefined
   ```
 ## Return Values in JS
-  Unless you use the `return` keyword or call a function that explictly returns a value, the implicit return value in JavaScript is  `undefined`.
+  Unless you use the `return` keyword or call a function that explicitly returns a value, the implicit return value in JavaScript is  `undefined`.
     > Undefined represents the absence of a primitive value
 
   Other special return values in JavaScript are `null`
@@ -105,50 +108,56 @@ In JavaScript, variables are assigned values using the `=` operator. Variable na
 
 You can declare a variable in two ways  but each have different consequences:
 - declaring a variable **using** the `var` keyword
-```javascript
-  var someLocalNumber = 10; // can only be accessed within the current scope
+  ```javascript
+    var someLocalNumber = 10; // can only be accessed within the current scope
   ```
   <br>
-- declaring a variable **witout using** the `var` keyword
+- declaring a variable **without using** the `var` keyword
 
   ```javascript
-  someGlobalNumber = 42; // is now window.someGlobalNumber and can be accessed anywhere
+    someGlobalNumber = 42; // is now window.someGlobalNumber and can be accessed anywhere
   ```
 
 It is best to use the key word `var` before declaring a variable.  This ensures that the variable is set to the current scope.  If var is not used in defining a new variable it becomes global and is accessible throughout the program.  This happens because it becomes attached to the global object, which in most cases is `window`.
 
 Variables can also be declared, but not necessarily assigned a value.  The following two are equivalent:
-  ```javascript
+
+```javascript
   someNumber  = 10; // declares a global variable and returns 10
 
-  var someNumber = 10; // declares a non-global variable and returns 10
+var someNumber = 10; // declares a non-global variable and returns 10
 ```
 <br>
-Variables can also be assigned at once with multiple lines, using commas to delimit each.You must terminate the assignment with a semicolon.
-  - ex:
-    ```javascript
+Variables can also be assigned at once with multiple lines, using commas to delimit each. You must terminate the assignment with a semicolon.
+- ex:
+  ```javascript
     var someVariable, someNumber = 10, aString = 'Hello World';
-    ```
+  ```
 
 ## Booleans
 Booleans (**true** or **false** values) are fairly straight forward in JS; however, there are some quirks that you should be aware of.
 
-Unlike in Ruby, Booleans in JavaScript can be cast into numbers.  1 and 0 also follow boolean logic, so 1 is loosely equal to true and 0 is loosely equal to false. (1 and 0 can also be cast into true and false respectively).
-ex.
+Unlike in Ruby, Booleans in JavaScript can be cast into numbers.  1 and 0 also follow boolean logic, so 1 is loosely equal to true and 0 is loosely equal to false. (1 and 0 can also be cast into true and false respectively). For example:
   ```javascript
-  + true // returns 1
-  0 == false // returns true
-  !!1 // returns true
   !!0 // returns false
+
++ true // returns 1
+
+0 == false // returns true
+
+!!1 // returns true
+
   ```
 
 ## Strings
 Strings are very straight forward in JS.  They are collections of characters.  Plus signs are used to concatenated strings.
+
 JS does not support string interpolation like some other languages (i.e. Ruby). Concatenating strings coerces the types of the objects into strings if they are not already.
 
   ```javascript
   'Hello ' + 'World'; // returns 'Hello World'
-  'High ' + 5 + '!!!'; // returns 'High 5!!!'
+
+'High ' + 5 + '!!!'; // returns 'High 5!!!'
   ```
 
 ## Numbers
@@ -157,10 +166,13 @@ Unlike most programming languages JS uses floats by default. And creating litera
 Sometimes this can lead to unexpected consequences, which can generally be solved with `Math.floor`.  Note when comparing integers to unknown numbers it is best practice to floor the unknown because some floats are equal to the integer.
 
   ```javascript
-  4 === 4.0; // returns true
-  Math.floor(4.00001); // returns 4
-  4.0000000000000001 === 4; // returns true
-  Math.floor(4.0000000000000001); === true // safer!
+    4 === 4.0; // returns true
+
+Math.floor(4.00001); // returns 4
+
+4.0000000000000001 === 4; // returns true
+
+Math.floor(4.0000000000000001); === true // safer!
   ```
 
 ## Operators
@@ -173,14 +185,16 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
   ```javascript
   var foo = "Hello";
 
-  var bar = "World!"
-  console.log(bar + ' ' + bar); // 'Hello World!'
+var bar = "World!"
+
+console.log(bar + ' ' + bar); // 'Hello World!'
   ```
 
   **Multiplication and division**
   ```javascript
   2 * 3;
-  2 / 3;
+
+2 / 3;
   ```
 
   **Incrementing and decrementing**
