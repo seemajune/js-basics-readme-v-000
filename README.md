@@ -66,28 +66,28 @@ We make a lot of assumptions when we write computer programs. In order to make t
   ** Values that evaluate to `true`**
 
   ```javascript
-  'all strings';
-
-'all number strings'; // for example '0', '5', '0.2', '-3.14'
-
-[]; // an empty array
-
-{} // an empty object
-
-1 // any non-zero number
+  'all strings';  
+  
+  'all number strings'; // for example '0', '5', '0.2', '-3.14'  
+  
+  []; // an empty array  
+  
+  {} // an empty object  
+  
+  1 // any non-zero number
   ```
 
   **Values that evaluate to 'false'**
   ```javascript
-  0 // the number zero
-
-''  // an empty string
-
-NaN
-
-null
-
-undefined
+  0 // the number zero  
+  
+  ''  // an empty string  
+  
+  NaN  
+  
+  null  
+  
+  undefined
   ```
 ## Return Values in JS
   Unless you use the `return` keyword or call a function that explicitly returns a value, the implicit return value in JavaScript is  `undefined`.
@@ -123,9 +123,9 @@ It is best to use the key word `var` before declaring a variable.  This ensures 
 Variables can also be declared, but not necessarily assigned a value.  The following two are equivalent:
 
 ```javascript
-  someNumber  = 10; // declares a global variable and returns 10
-
-var someNumber = 10; // declares a non-global variable and returns 10
+  someNumber  = 10; // declares a global variable and returns 10  
+  
+  var someNumber = 10; // declares a non-global variable and returns 10
 ```
 <br>
 Variables can also be assigned at once with multiple lines, using commas to delimit each. You must terminate the assignment with a semicolon.
@@ -139,13 +139,13 @@ Booleans (**true** or **false** values) are fairly straight forward in JS; howev
 
 Unlike in Ruby, Booleans in JavaScript can be cast into numbers.  1 and 0 also follow boolean logic, so 1 is loosely equal to true and 0 is loosely equal to false. (1 and 0 can also be cast into true and false respectively). For example:
   ```javascript
-  !!0 // returns false
-
-+ true // returns 1
-
-0 == false // returns true
-
-!!1 // returns true
+  !!0 // returns false  
+  
+  + true // returns 1 
+  
+  0 == false // returns true  
+  
+  !!1 // returns true
 
   ```
 
@@ -155,9 +155,9 @@ Strings are very straight forward in JS.  They are collections of characters.  P
 JS does not support string interpolation like some other languages (i.e. Ruby). Concatenating strings coerces the types of the objects into strings if they are not already.
 
   ```javascript
-  'Hello ' + 'World'; // returns 'Hello World'
-
-'High ' + 5 + '!!!'; // returns 'High 5!!!'
+  'Hello ' + 'World'; // returns 'Hello World'  
+  
+  'High ' + 5 + '!!!'; // returns 'High 5!!!'
   ```
 
 ## Numbers
@@ -165,14 +165,15 @@ Unlike most programming languages JS uses floats by default. And creating litera
 
 Sometimes this can lead to unexpected consequences, which can generally be solved with `Math.floor`.  Note when comparing integers to unknown numbers it is best practice to floor the unknown because some floats are equal to the integer.
 
-  ```javascript
-    4 === 4.0; // returns true
-
-Math.floor(4.00001); // returns 4
-
-4.0000000000000001 === 4; // returns true
-
-Math.floor(4.0000000000000001); === true // safer!
+  ```javascript  
+  
+  4 === 4.0; // returns true  
+  
+  Math.floor(4.00001); // returns 4  
+  
+  4.0000000000000001 === 4; // returns true  
+  
+  Math.floor(4.0000000000000001); === true // safer!
   ```
 
 ## Operators
@@ -183,18 +184,18 @@ Math.floor(4.0000000000000001); === true // safer!
 
   **Concatenation**
   ```javascript
-  var foo = "Hello";
-
-var bar = "World!"
-
-console.log(bar + ' ' + bar); // 'Hello World!'
+  var foo = "Hello";  
+  
+  var bar = "World!"  
+  
+  console.log(bar + ' ' + bar); // 'Hello World!'
   ```
 
   **Multiplication and division**
   ```javascript
-  2 * 3;
-
-2 / 3;
+  2 * 3;  
+  
+  2 / 3;
   ```
 
   **Incrementing and decrementing**
@@ -265,16 +266,16 @@ console.log(bar + ' ' + bar); // 'Hello World!'
      ```
 
 ## Comparison Operators
-Recall that Comparison operators allow you to test the relationship (equality and identity) between objects. By now you know about the following comparison operators:
+Recall that Comparison operators allow you to test the relationship (equality and identity) between objects. By now you know about the following comparison operators:  
 
-Operator      | Description                                         | Example  |
---------------|----------------------------------------------------------------
-==  | checks if calue of two operands are equal or not. If yes then returns true.  | (10 == 20) is not true; hence returns false
-!=  | checks if the value of 2 operands are equal. If values are not equal, returns true | (a != b) is true; hence returns true
->  | checks if value of left operand is greater than value of right operand. If left operand is greater than right operand, returns true. | (10 > 20) is not true hence returns false
-<  | checks if value of left operand is less than value of right operand. If left operand is less than righ operand, returns true | (10 < 20) is true
->=  | checks if value of left operand is greater than or equal to value of right operand. If it is, returns true; else returns false | (10 >= 20 ) is false
-<= | checks if value of left operand is less than or equal to right operand. If left operamd is less than or equal to righ operand, returns true; else returns false | (10 <= 20) is true
+| Operator      | Description   | Example |
+| ------------- | ------------- |-------- |
+| ==            | checks if calue of two operands are equal or not. If yes then returns true  | (10 == 20) is not true; hence returns false |
+| !=            |checks if the value of 2 operands are equal. If values are not equal, returns true| (a != b) is true; hence returns true |
+| >             | checks if value of left operand is greater than value of right operand. If left operand is greater than right operand, returns true  | (10 > 20) is not true hence returns false         |  
+| <  | checks if value of left operand is less than value of right operand. If left operand is less than righ operand, returns true | (10 < 20) is true        |  
+| >=   | checks if value of left operand is greater than or equal to value of right operand. If it is, returns true; else returns false  | (10 >= 20 ) is false         |  
+| <=  | checks if value of left operand is less than or equal to right operand. If left operamd is less than or equal to righ operand, returns true; else returns false  |  (10 <= 20) is true       |  
 
 
 In JavaScript, in addition to the regular comparison operators, we have **strict comparison operators**; which are strict equals  (`===`) and strict not-equals (`!==`).
@@ -325,36 +326,38 @@ isNaN(NaN) // returns true
 Flow Control allows the excution of code only under certain conditions.
 
   1. ** IF Statements**
-    - evaluates to either true or false:
+    * evaluates to either true or false:  
     ```javascript
       if ( conditionToTestIsTrue) {
         // code to be executed here
       }
-  ```
-    - you will often see an `If` statement used in combination with an  `else` clause. An `else` clause is a fallback to an if statement and will only get executed if the previous `if` statement is false.
-      ```javascript
+    ```
+    
+    * You will often see an `If` statement used in combination with an  `else` clause. An `else` clause is a fallback to an `if` statement and will only get executed if the previous `if` statement is false.  
+    ```javascript
       if (conditionToTestIsTrue) {
         // codition is false hence code is not executed
       } else {
         // code to be executed because previous `if` condition is false
       }
-      ```
-    - `if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
-      ```javascript
-        if (conditionToTestIsTrue){
+    ```  
+    
+    * `if` statements can also be combined with an `else if` clause. This is like an else statement, but with its own condition. It will only run if its condition is true, and the previous statement's condition was false.
+    ```javascript
+      if (conditionToTestIsTrue){
           // codition is false hence code is not executed
-        } else if (thisCondionIsTrue) {
-          // excute this code if previous `if` statement is false
-        } else {
-          // excute this code if the 2 conditions above are false
-        }
-      ```
+      } else if (thisCondionIsTrue) {
+        // excute this code if previous `if` statement is false
+      } else {
+        // excute this code if the 2 conditions above are false
+      }
+    ```
 
   2. ** Ternary Operator**
     - used as a shortcut for the `if-else` statement
     - tests a condition; if the condition is true, it returns a certain value, otherwise it returns a different value
     ```javascript
-    conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
+      conditionToTest ? valueToBeReturnedIfTrue : valueToBeReturnedIfFalse
     ```
 
   3. ** SWITCH Statements**
@@ -378,7 +381,7 @@ Flow Control allows the excution of code only under certain conditions.
 ## Loops
 Loops are used to execute the same block of code a specified number of times.
 
-1. ** `for` loop**: made up of four statements and has the following structure:
+1. **`for` loop**: made up of four statements and has the following structure:
       ```javascript
         for ( [initialization]; [condition]; [iteration] ) {
         [loopBody]
