@@ -388,6 +388,7 @@ Flow Control allows the excution of code only under certain conditions.
     - the switch expression is evaluated once
     - the value of the expression is compared with the values of each case
     - if there is a match, the associated block of code is executed
+    
     ```javascript
       switch (expression) {
         case n:
@@ -406,11 +407,13 @@ Flow Control allows the excution of code only under certain conditions.
 Loops are used to execute the same block of code a specified number of times.
 
 1. **`for` loop**: made up of four statements and has the following structure:
+      
       ```javascript
         for ( [initialization]; [condition]; [iteration] ) {
         [loopBody]
         }
       ```
+      
   - initialization
     An expression (including assignment expressions) or variable declaration. Typically used to initialize a counter variable. This expression may optionally declare new variables with the var keyword
 
@@ -427,6 +430,7 @@ Loops are used to execute the same block of code a specified number of times.
 
     Example:
     The code belong will print the string "Hello World!" 99 times
+    
     ```javascript
       // i is set to equal to 0; as long as i is less than 100 execute the code in the loopBody - which is print "Hello World"; increment i each time code in loopBody is executed
       for (var i = 0, i < 100, i++) {
@@ -435,17 +439,20 @@ Loops are used to execute the same block of code a specified number of times.
     ```
 
 2. **`while` loop**: similar to an if statement, except that its body will keep executing until the condition evaluates to false. Has the following structure:
+  
   ```javascript
     while ([condition]) {
       [loopBody]
     }
   ```
+  
   - condition
     An expression evaluated before each pass through the loop (each pass is either an increment or a decrement). If this condition evaluates to true, statement is executed
 
     > Use `while` loop when you don't know how many times your loop needs to run - that is your condition is dependent on some a dynamic function/return value
 
     Example:
+    
     ```javascript
       // i is set to Zero
       var i = 0;
@@ -460,11 +467,13 @@ Loops are used to execute the same block of code a specified number of times.
     ```
 
 3. **`do-while` loop**: almost exactly the same as the while loop, except for the fact that the loop’s body is executed at least once before the condition is tested. Has the following structure:
+  
   ```javascript
     do {
       [loopBody];
     } while ([condition]);
   ```
+  
     > rarely see `do-while` used since very few situations require a loop that blindly executes at least once.
 
 ####Resources:
