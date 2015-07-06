@@ -474,7 +474,7 @@ Loops are used to execute the same block of code a specified number of times.
     } while ([condition]);
   ```
   
-    > rarely see `do-while` used since very few situations require a loop that blindly executes at least once.
+  You will rarely see `do-while` used since very few situations require a loop that blindly executes at least once.
 
 ####Resources:
 
