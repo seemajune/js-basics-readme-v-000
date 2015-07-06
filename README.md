@@ -4,13 +4,14 @@ language: JavaScript, JS
 resources: 8
 ---
 
-#JavaScript Basics:
+#JavaScript Basics
+
 JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.
 
 ## Objectives
 1. Gain a basic understanding of javascript syntax
 
-2. Become comfortable reading, understanding, and writing basic javascript code
+2. Become comfortable reading, understanding, and writing basic JavaScript code
 
 ## Syntax Basics
 Welcome to JavaScript! First thing first, let's get the absolute basics down before you do anything else.
@@ -19,13 +20,13 @@ Welcome to JavaScript! First thing first, let's get the absolute basics down bef
 **A simple variable declaration**
 
 ```javascript
-var foo = 'hello world';
+var greeting = 'hello world';
 ```
 
 **Whitespace has no meaning outside of quotation marks**
 
-```javascrip
-var foo =         'hello world';
+```javascript
+var greeting =         'hello world';
 ```
 
 **Parentheses indicate precedence**
@@ -39,11 +40,20 @@ var foo =         'hello world';
 **Tabs enhance readability, but have no special meaning**
 
 ```javascript
-var foo = function() {
-    console.log('hello');
+var tvShows = {
+    "ABC": [
+        "The Bachelorette",
+        "Grey's Anatomy"
+    ],
+    "FOX": [
+        "Bones",
+        "Empire"
+    ]
 };
 ```
+
 ## Data Types
+
 JavaScript has a small set of primitive data types:
   1. Number
     - examples include: 1, 3.14, 0.13, 100, ...
@@ -61,6 +71,7 @@ JavaScript has a small set of primitive data types:
     - this is a special keyword that means one of two things: no value or empty.  The difference from undefined is that when a variable is null, it is still defined
 
 ## Truthy and Falsely Things
+
 We make a lot of assumptions when we write computer programs. In order to make the right assumtions, we need to understand what values in our program evaluate to `truthy` values and which evaluate to `falsely` values.
 
   ** Values that evaluate to `true`**
@@ -72,22 +83,22 @@ We make a lot of assumptions when we write computer programs. In order to make t
   
   []; // an empty array  
   
-  {} // an empty object  
+  {}; // an empty object  
   
-  1 // any non-zero number
+  1; // any non-zero number
   ```
 
   **Values that evaluate to 'false'**
   ```javascript
-  0 // the number zero  
+  0; // the number zero  
   
-  ''  // an empty string  
+  '';  // an empty string  
   
-  NaN  
+  NaN;  
   
-  null  
+  null; 
   
-  undefined
+  undefined;
   ```
 ## Return Values in JS
   Unless you use the `return` keyword or call a function that explicitly returns a value, the implicit return value in JavaScript is  `undefined`.
@@ -100,6 +111,7 @@ We make a lot of assumptions when we write computer programs. In order to make t
     > NaN represents an error from the improper use of a math operator.
 
 ## Variables
+
 ### Declaring Variables
 
 As in Ruby, variables in javascript are used to store information/data that will be used in our program.  A variable can point to almost any type of value including numbers, strings, arrays, and hashes.
@@ -118,7 +130,7 @@ You can declare a variable in two ways  but each have different consequences:
     someGlobalNumber = 42; // is now window.someGlobalNumber and can be accessed anywhere
   ```
 
-It is best to use the key word `var` before declaring a variable.  This ensures that the variable is set to the current scope.  If var is not used in defining a new variable it becomes global and is accessible throughout the program.  This happens because it becomes attached to the global object, which in most cases is `window`.
+It is best to use the key word `var` before declaring a variable.  This ensures that the variable is set to the current scope.  If `var` is not used in defining a new variable it becomes global and is accessible throughout the program.  This happens because it becomes attached to the global object, which in most cases is `window`.
 
 Variables can also be declared, but not necessarily assigned a value.  The following two are equivalent:
 
@@ -135,9 +147,10 @@ Variables can also be assigned at once with multiple lines, using commas to deli
   ```
 
 ## Booleans
+
 Booleans (**true** or **false** values) are fairly straight forward in JS; however, there are some quirks that you should be aware of.
 
-Unlike in Ruby, Booleans in JavaScript can be cast into numbers.  1 and 0 also follow boolean logic, so 1 is loosely equal to true and 0 is loosely equal to false. (1 and 0 can also be cast into true and false respectively). For example:
+Unlike in Ruby, booleans in JavaScript can be cast into numbers. The numbers 1 and 0 also follow boolean logic, so 1 is loosely equal to true and 0 is loosely equal to false. (1 and 0 can also be cast into true and false respectively). For example:
   ```javascript
   !!0 // returns false  
   
