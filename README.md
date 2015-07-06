@@ -261,6 +261,7 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
   - **logical OR (||) operator**
       * returns value of first truthy operand it encounters
       * if both operands are falsely, returns value of last operand
+      
       ```javascript
       var bar = 0;
       var foo = 1;
@@ -274,6 +275,7 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
   - **logical AND (&&) operator**
      * returns first falsely operand it encounters
      * if both operands are truthy, returns value of last operand
+     
      ```javascript
      var bar = 0;
      var foo = 1;
