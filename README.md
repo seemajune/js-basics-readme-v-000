@@ -4,18 +4,19 @@ language: JavaScript, JS
 resources: 8
 ---
 
-#JavaScript Basics
+# JavaScript Basics
 
 JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.
 
 ## Objectives
-1. Gain a basic understanding of javascript syntax
+
+1. Gain a basic understanding of JavaScript syntax
 
 2. Become comfortable reading, understanding, and writing basic JavaScript code
 
 ## Syntax Basics
-Welcome to JavaScript! First thing first, let's get the absolute basics down before you do anything else.
 
+Welcome to JavaScript! First thing first, let's get the absolute basics down before you do anything else.
 
 **A simple variable declaration**
 
@@ -56,19 +57,20 @@ var tvShows = {
 
 JavaScript has a small set of primitive data types:
   1. Number
-    - examples include: 1, 3.14, 0.13, 100, ...
+    - Examples include: 1, 3.14, 0.13, 100, ...
+    - The largest number in JavaScript is 9007199254740992. Similarly, the smallest number is -9007199254740992 (see [here](http://stackoverflow.com/a/307200/2890716) for more info.
 
   2. String
-    - examples include:  "a", "World Wide Web"
+    - Examples include:  "a", "World Wide Web"
 
   3. Boolean
-    - true, false
+    - Only two examples: true and false
 
   4. Undefined
-    - refers to an absent or unknown value
+    - Refers to an absent or unknown value
 
   5. Null
-    - this is a special keyword that means one of two things: no value or empty.  The difference from undefined is that when a variable is null, it is still defined
+    - This is a special keyword that means one of two things: no value or empty.  The difference from undefined is that when a variable is null, it is still defined.
 
 ## Truthy and Falsely Things
 
@@ -114,7 +116,7 @@ We make a lot of assumptions when we write computer programs. In order to make t
 
 ### Declaring Variables
 
-As in Ruby, variables in javascript are used to store information/data that will be used in our program.  A variable can point to almost any type of value including numbers, strings, arrays, and hashes.
+As in Ruby, variables in JavaScript are used to store information/data that will be used in our program.  A variable can point to almost any type of value including numbers, strings, arrays, and hashes.
 
 In JavaScript, variables are assigned values using the `=` operator. Variable names are typically all lower case, and in the case of multiple words, the words are joined together using [lower camelCase](http://c2.com/cgi/wiki?LowerCamelCase).
 
@@ -163,6 +165,7 @@ Unlike in Ruby, booleans in JavaScript can be cast into numbers. The numbers 1 a
   ```
 
 ## Strings
+
 Strings are very straight forward in JS.  They are collections of characters.  Plus signs are used to concatenated strings.
 
 JS does not support string interpolation like some other languages (i.e. Ruby). Concatenating strings coerces the types of the objects into strings if they are not already.
@@ -174,6 +177,7 @@ JS does not support string interpolation like some other languages (i.e. Ruby). 
   ```
 
 ## Numbers
+
 Unlike most programming languages JS uses floats by default. And creating literal numbers uses the Number Constructor. New numbers can optionally have decimal points with trailing zeros, but keep in mind they are floats either way.
 
 Sometimes this can lead to unexpected consequences, which can generally be solved with `Math.floor`.  Note when comparing integers to unknown numbers it is best practice to floor the unknown because some floats are equal to the integer.
@@ -201,7 +205,7 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
   
   var bar = "World!"  
   
-  console.log(bar + ' ' + bar); // 'Hello World!'
+  console.log(foo + ' ' + bar); // 'Hello World!'
   ```
 
   **Multiplication and division**
@@ -218,6 +222,7 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
   var k = i++; // post-increment: k equals 2; i equals 3
   ```
   ### Operations on Numbers & Strings
+  
   In JavaScript, numbers and strings will occasionally behave in ways you might not expect.
 
   **Addition vs. concatenation**
@@ -243,7 +248,7 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
   the effect of casting its argument into a number. You could also use the
   unary plus operator, which does the same thing:
 
-  **Forcing a string to act as a number (using the unary-plus operator)**
+  **Forcing a string to act as a number (using the [unary-plus operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_()))**
 
   ```javascript
   console.log(foo + +bar);
@@ -279,6 +284,7 @@ Sometimes this can lead to unexpected consequences, which can generally be solve
      ```
 
 ## Comparison Operators
+
 Recall that Comparison operators allow you to test the relationship (equality and identity) between objects. By now you know about the following comparison operators:  
 
 | Operator      | Description   | Example |
@@ -294,6 +300,7 @@ Recall that Comparison operators allow you to test the relationship (equality an
 In JavaScript, in addition to the regular comparison operators, we have **strict comparison operators**; which are strict equals  (`===`) and strict not-equals (`!==`).
 
 **Loose comparison operators** ( `==` and `!=` ) are quite liberal - they convert type to match one another. This means that values may be considered equal even if they are different types, since the operator will force coercion of one or both operators into a single type (usually a number) before performing a comparison.
+
 ```javascript
 var bar = 0;
 var foo = 1;
@@ -305,14 +312,12 @@ var zee = 2;
 foo == bar; // returns false
 foo != bar; // returns true
 
-
 // does  1 equal "1"?
 foo == yoo; // returns true. Why? Because == opertor forces coercion of string 1 ("1") into number 1 (1)
-
 ```
 
-
 On the other hand, **strict comparison operators** (`===` and `!==` ) compare both type and value equality.
+
 ```javascript
 var bar = 0;
 var foo = 1;
@@ -324,7 +329,9 @@ foo === yoo; // returns false because though 0 and 1 are of the same type (both 
 
 foo === parseInt(yoo); returns true because `parseInt` converts string 1 to integer(number) 1
 ```
+
 ### Undefined, Null, and NaN
+
 Undefined represents the absence of a primitve value, and Null represents the absence of an object.
 
 NaN represents an error from the improper use of a math operator.  NaN is the only thing in JS that is not equal to itself. To check for NaN use the `isNaN()` function.
@@ -336,6 +343,7 @@ isNaN(NaN) // returns true
 ```
 
 ## Flow Control  && Conditional Logic
+
 Flow Control allows the excution of code only under certain conditions.
 
   1. ** IF Statements**
@@ -392,6 +400,7 @@ Flow Control allows the excution of code only under certain conditions.
     ```
 
 ## Loops
+
 Loops are used to execute the same block of code a specified number of times.
 
 1. **`for` loop**: made up of four statements and has the following structure:
@@ -457,6 +466,7 @@ Loops are used to execute the same block of code a specified number of times.
     > rarely see `do-while` used since very few situations require a loop that blindly executes at least once.
 
 ####Resources:
+
 * [String Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * [Number Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 * [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
