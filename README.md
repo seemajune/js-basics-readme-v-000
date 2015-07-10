@@ -1,9 +1,3 @@
----
-tags: variables, integers, strings, operators, primitives, floats, beginner
-language: JavaScript, JS
-resources: 8
----
-
 # Intro to JavaScript
 
 JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.
