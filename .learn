@@ -1,11 +1,6 @@
 tags:
   - variables
-  - integers
-  - strings
-  - operators
-  - primitives
-  - floats
+  - basics
 languages:
-  - JavaScript
-  - JS
+  - javascript
 resources: 5
