@@ -180,11 +180,6 @@ foo && moo; // returns 2
    
 ## Resources
 
-* [String Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-* [Number Constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-* [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
-* [Undefined, Null, NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
+* [MDN - Return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
 * [Truth and Equality in JavaScript](https://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/)
-* [For Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-* [While Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
-* [Do-While Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+
