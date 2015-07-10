@@ -1,6 +1,9 @@
 tags:
   - variables
   - basics
+  - truthy/falsey
+  - return values
+  - operators
 languages:
   - javascript
 resources: 5
