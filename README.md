@@ -1,6 +1,6 @@
 # Intro to JavaScript
 
-JavaScript is the de facto language of the internet.  It's a tool that once mastered will allow you to interact with your users via your app in fun and interesting ways.  It is a dynamically typed, prototypical, functional programming language.  What that exactly means will come more apparent in class and through exposure to the language.  But here are the basics.
+JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language. What that exactly means will become more apparent in class and through exposure to the language. But here are the basics.
 
 ## Overview
 
@@ -15,7 +15,6 @@ JavaScript is the de facto language of the internet.  It's a tool that once mast
   * Basic
   * Operations on Numbers & Strings
   * Logical Operators
-
 
 ## Printing to the Console
 
@@ -36,7 +35,7 @@ Now we'll wrap the string in parentheses:
 console.log("JavaScript is also known as ECMAScript")
 ```
 
-And the icing on the top of this printing-string cake (yum!) is to add a semicolon at the 
+And the icing on the top of this printing-string cake (yum!) is to add a semicolon at the end:
 
 ```javascript
 console.log("JavaScript is also known as ECMAScript");
@@ -65,7 +64,7 @@ greeting = "hello world"
 In JavaScript, to declare a local variable (which is almost always what you want to do), you add the keyword `var` before the variable name, like so:
 
 ```javascript
-var greeting = 'hello world';
+var greeting = "hello world";
 ```
 Notice that semicolons are used after variable declaration and after printing information to the console.
 
@@ -115,7 +114,7 @@ var fox = "XOF NWORB KCIUQ EHT";
 fox = fox.split("").reverse().join(""); fox = fox.toLowerCase();
 // => "the quick brown fox"
 ```
-Of course, there are exceptions. For instance, when we cover loops, you may notice that the `for` loop abides by this rule for the frist two statements in its argument but not for the last. Not to worry, its syntax will get covered more fully later in the curriculum.
+Of course, there are exceptions. For instance, when we cover loops, you may notice that the `for` loop abides by this rule for the first two statements in its argument but not for the last. Not to worry, its syntax will get covered more fully later in the curriculum.
 
 **Ideal**
 
