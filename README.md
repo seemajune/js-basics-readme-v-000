@@ -153,7 +153,7 @@ Should you get stuck with your semicolon usage (and don't worry, even profession
 
 ## Truthy and Falsely Values
 
-We make a lot of assumptions when we write computer programs. In order to make the right assumtions, we need to understand what values in our program evaluate to `truthy` values and which evaluate to `falsely` values.
+We make a lot of assumptions when we write computer programs. In order to make the right assumptions, we need to understand what values in our program evaluate to `truthy` values and which evaluate to `falsely` values.
 
 Values that evaluate to `true`:
 
