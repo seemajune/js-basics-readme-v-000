@@ -1,6 +1,9 @@
 # Intro to JavaScript
 
-JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language. What that exactly means will become more apparent in class and through exposure to the language. But here are the basics.
+JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language. What that exactly means will become more apparent in lessons and through exposure to the language. But here are the basics.
+
+## Objectives
++ 
 
 ## Overview
 
@@ -11,10 +14,6 @@ JavaScript is the de facto language of the internet. It's a tool that, once mast
   * Whitespace
 * Truthy and Falsely Values
 * Return Values
-* Operators
-  * Basic
-  * Operations on Numbers & Strings
-  * Logical Operators
 
 ## Printing to the Console
 
@@ -196,7 +195,6 @@ Other special return values in JavaScript are `null`
 and `NaN`
 
 > NaN represents an error from the improper use of a math operator.
-
 
 
 <a href='https://learn.co/lessons/js-basics-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
