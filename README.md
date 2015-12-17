@@ -10,46 +10,14 @@ JavaScript is the de facto language of the internet. It's a tool that, once mast
 
 ## Overview
 
-* Printing to the Console
 * Syntax Basics
   * Variable Declaration
   * Semicolons
   * Whitespace
+* Printing to the Console
 * Truthy and Falsely Values
 * Return Values
 
-## Printing to the Console
-
-One of the first methods you probably learned in Ruby was `puts`. JavaScript has an equivalent function called `console.log()`. Let's take the Ruby code below and turn it into JavaScript code:
-
-```ruby
-puts "JavaScript is also known as ECMAScript"
-```
-
-Well let's change that `puts` into a `console.log`:
-
-```javascript
-console.log "JavaScript is also known as ECMAScript"
-```
-Now we'll wrap the string in parentheses:
-
-```javascript
-console.log("JavaScript is also known as ECMAScript")
-```
-
-And the icing on the top of this printing-string cake (yum!) is to add a semicolon at the end:
-
-```javascript
-console.log("JavaScript is also known as ECMAScript");
-```
-
-Will the code execute and work without the semicolon? Yes. Is the semicolon best practice? Yes. Should you use semicolons? Also yes. We'll cover semicolons more in depth later in this readme.
-
-Well, this code is all fine and dandy but how do you run it? The best, possibly most powerful thing about JavaScript is that all modern browsers know how to run it. All you need to do is make sure you're reading this readme on either Chrome or Firefox (trust us, the developer tools of these browsers are way better than on Safari). Then open up your browser's console. That's right, just like your computer knows about running a Ruby sandbox when you type `> irb`, your browser runs a JavaScript sandbox when you open up the console.
-
-To open up your browser's console from Chrome, type `command` + `option` + `J`. From Firefox, type `command` + `option` + `K`. (If you love writing directly into your terminal, go ahead and install [Node](http://blog.teamtreehouse.com/install-node-js-npm-mac). Then type `node` in your terminal and you'll be in a JavaScript sandbox.)
-
-From your console (or Node terminal), simply type the code above into the prompt and hit `return`. There, you've run your first JavaScript code!
 
 ## Syntax Basics
 
@@ -184,7 +152,7 @@ null;
 
 undefined;
 ```
-  
+
 ## Return Values
 
 Unless you use the `return` keyword or call a function that explicitly returns a value, the implicit return value in JavaScript is  `undefined`.
@@ -198,6 +166,40 @@ Other special return values in JavaScript are `null`
 and `NaN`
 
 > NaN represents an error from the improper use of a math operator.
+
+
+## Printing to the Console
+
+One of the first methods you probably learned in Ruby was `puts`. JavaScript has an equivalent function called `console.log()`. Let's take the Ruby code below and turn it into JavaScript code:
+
+```ruby
+puts "JavaScript is also known as ECMAScript"
+```
+
+Well let's change that `puts` into a `console.log`:
+
+```javascript
+console.log "JavaScript is also known as ECMAScript"
+```
+Now we'll wrap the string in parentheses:
+
+```javascript
+console.log("JavaScript is also known as ECMAScript")
+```
+
+And the icing on the top of this printing-string cake (yum!) is to add a semicolon at the end:
+
+```javascript
+console.log("JavaScript is also known as ECMAScript");
+```
+
+Will the code execute and work without the semicolon? Yes. Is the semicolon best practice? Yes. Should you use semicolons? Also yes. We'll cover semicolons more in depth later in this readme.
+
+Well, this code is all fine and dandy but how do you run it? The best, possibly most powerful thing about JavaScript is that all modern browsers know how to run it. All you need to do is make sure you're reading this readme on either Chrome or Firefox (trust us, the developer tools of these browsers are way better than on Safari). Then open up your browser's console. That's right, just like your computer knows about running a Ruby sandbox when you type `> irb`, your browser runs a JavaScript sandbox when you open up the console.
+
+To open up your browser's console from Chrome, type `command` + `option` + `J`. From Firefox, type `command` + `option` + `K`. (If you love writing directly into your terminal, go ahead and install [Node](http://blog.teamtreehouse.com/install-node-js-npm-mac). Then type `node` in your terminal and you'll be in a JavaScript sandbox.)
+
+From your console (or Node terminal), simply type the code above into the prompt and hit `return`. There, you've run your first JavaScript code!
 
 
 <a href='https://learn.co/lessons/js-basics-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
