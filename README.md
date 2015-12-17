@@ -3,7 +3,10 @@
 JavaScript is the de facto language of the internet. It's a tool that, once mastered, will allow you to interact with your users via your app in fun and interesting ways. It is a dynamically typed, prototypical, functional programming language. What that exactly means will become more apparent in lessons and through exposure to the language. But here are the basics.
 
 ## Objectives
-+ 
++ Print JavaScript to the console
++ Explain proper use of semicolons
++ Explain truthy and falsely values
++ Use proper return values in their code
 
 ## Overview
 
