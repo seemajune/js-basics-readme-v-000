@@ -21,8 +21,6 @@ JavaScript is the de facto language of the internet. It's a tool that, once mast
 
 ## Syntax Basics
 
-Now that you know how to print something, let's move onto some more basics. 
-
 #### Variable Declaration
 
 To make a variable called `greeting` and set it equal to the string `"hello world"` in Ruby, we could just write:
