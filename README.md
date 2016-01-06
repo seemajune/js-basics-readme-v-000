@@ -6,7 +6,6 @@ JavaScript is the de facto language of the internet. It's a tool that, once mast
 + Print JavaScript to the console
 + Explain proper use of semicolons
 + Explain truthy and falsely values
-+ Use proper return values in their code
 
 ## Overview
 
@@ -16,7 +15,7 @@ JavaScript is the de facto language of the internet. It's a tool that, once mast
   * Whitespace
 * Printing to the Console
 * Truthy and Falsely Values
-* Return Values
+
 
 
 ## Syntax Basics
@@ -150,21 +149,6 @@ null;
 
 undefined;
 ```
-
-## Return Values
-
-Unless you use the `return` keyword or call a function that explicitly returns a value, the implicit return value in JavaScript is  `undefined`.
-
-> Undefined represents the absence of a primitive value
-
-Other special return values in JavaScript are `null`
-
-> Null represents the absence of an object
-
-and `NaN`
-
-> NaN represents an error from the improper use of a math operator.
-
 
 ## Printing to the Console
 
