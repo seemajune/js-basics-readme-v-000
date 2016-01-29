@@ -278,4 +278,4 @@ foo && moo; // returns 2
 * [MDN - Return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return)
 * [JavaScript We Blog - Truth and Equality in JavaScript](https://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/)
 
-<a href='https://learn.co/lessons/js-basics-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
