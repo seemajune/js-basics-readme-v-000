@@ -183,6 +183,18 @@ To open up your browser's console from Chrome, type `command` + `option` + `J`. 
 
 From your console (or Node terminal), simply type the code above into the prompt and hit `return`. There, you've run your first JavaScript code!
 
+## Web Inspector
+
+Want to play around with JavaScript, like we do Ruby in `IRB`? We can do that directly in our browser console.
+
+Open up Chrome and go to any website. Right click and select `Inspect` from the dropdown. From there, select the `console` tab:
+
+![console](https://s3.amazonaws.com/learn-verified/console.png)
+
+The white space below is your console, a sandbox where you can enter and execte any JavaScript code you want.
+
+![Executing JavaScript in Console](https://s3.amazonaws.com/learn-verified/exectuing-js-in-console.png)
+
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
 
