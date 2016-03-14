@@ -85,7 +85,7 @@ Of course, there are exceptions. For instance, when we cover loops, you may noti
 
 **Ideal**
 
-From [Codecademy's blog on semicolons](https://www.codecademy.com/blog/1707):
+From [Codecademy's blog on semicolons](https://www.codecademy.com/blog/78):
 
 >As we saw above, the semicolon in JavaScript is used to separate statements. However, it can be omitted if the statement is followed by a line break (or there’s only one statement in a {block}). A statement is a piece of code that tells the computer to do something. Here are the most common types of statements:
 
