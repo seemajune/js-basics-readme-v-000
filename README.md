@@ -8,18 +8,8 @@ lessons and through exposure to the language. But here are the basics.
 
 ## Objectives
 + Print JavaScript to the console
-+ Explain proper use of semicolons
++ Explain proper use of semicolons and other syntax basics
 + Explain truthy and falsely values
-
-## Overview
-
-* Syntax Basics
-  * Variable Declaration
-  * Semicolons
-  * Whitespace
-* Printing to the Console
-* Truthy and Falsely Values
-
 
 
 ## Syntax Basics
