@@ -243,4 +243,3 @@ The white space below is your console, a sandbox where you can enter and execte 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme' title='Intro to JavaScript'>Intro to JavaScript</a> on Learn.co and start learning to code for free.</p>
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-basics-readme'>Javascript Basics </a> on Learn.co and start learning to code for free.</p>
